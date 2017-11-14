@@ -1,0 +1,6 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/var/www/html/app/.htpasswd"
+<Limit GET POST>
+Require valid-user
+</Limit>
